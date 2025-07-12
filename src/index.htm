@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>impress.js test</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/impress/impress.js@2.0.0/css/impress-demo.css">
+
+    <!-- Load Courier Prime from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier Prime', monospace !important;
+            transition: background-color 0.6s ease-in-out;
+        }
+
+        h1, h2, p {
+            font-family: 'Courier Prime', monospace !important;
+        }
+
+        .step {
+            width: 100vw;
+            height: 100vh;
+            padding: 2em;
+            border-radius: 10px;
+            background: transparent;
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        .fullscreen-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .fullscreen-title h1 {
+            font-size: 3.2em; /* reduced by 20% from 4em */
+        }
+
+        /* Center top-aligned heading on step1 */
+        #step1 p {
+            font-weight: bold;
+            text-align: center;
+            margin: 0;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Slide-specific background colors with transition */
+        .impress-on-step0 { background-color: #e6f0ff; }
+        .impress-on-step1 { background-color: #fff3e0; }
+        .impress-on-step2 { background-color: #f0f9ff; }
+        .impress-on-step3 { background-color: #f3e8ff; }
+
+    </style>
+</head>
+
+<body class="impress-enabled">
+
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js.</p>
+    </div>
+
+    <div id="impress">
+        <div id="step0" class="step fullscreen-title" data-x="-1000" data-y="0">
+            <h1>Reliability, Resilience and Incident Management</h1>
+        </div>
+
+        <!-- Apply zoom and upward offset to visually center heading at top of screen -->
+        <div id="step1" class="step" data-x="1000" data-y="-400" data-scale="2">
+            <p style="font-weight: bold; text-align: center; margin: 0; position: absolute; top: 0; left: 50%; transform: translateX(-50%);">Who am I?</p>
+            <br />
+            <div style="display: flex; align-items: flex-end; position: absolute; bottom: 0;">
+                <div>
+                    <img src="images/Linkedin-Logo.png" alt="LinkedIn" style="width: 80px; height: 80px;">
+                    <img src="images/medium-blog-icon.png" alt="Medium Blog" style="width: 80px; height: 80px; margin-left: 20px;">
+                    <br />
+                    <img src="images/bluesky_logo.png" alt="Bluesky Logo" style="width: 80px; height: 80px; margin-top: 20px;">
+                </div>
+                <p style="margin-left: 20px; font-weight: bold; font-size: 1.5em;">hatchman76</p>
+            </div>
+            </div>
+        </div>
+
+        <div id="step2" class="step" data-x="3000" data-y="0">
+            <h2>Second Slide</h2>
+        </div>
+
+        <div id="step3" class="step" data-x="6000" data-y="0" >
+            <h2>Zoomed Slide</h2>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/gh/impress/impress.js@2.0.0/js/impress.min.js"></script>
+    <script>
+        impress().init();
+    </script>
+
+</body>
+
+</html>

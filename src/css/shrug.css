@@ -1,0 +1,72 @@
+.shrug{
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 90px;
+	white-space: nowrap;
+	padding: 10px;
+}
+
+.left-arm,
+.right-arm{
+	display: inline-block;
+	transform: rotate(0deg);
+}
+
+.left-arm{
+	animation: 5s infinite left-arm;
+}
+
+.right-arm{
+	animation: 5s infinite right-arm;
+}
+
+.blink{
+	display: block;
+	position: absolute;
+	/*background: white;*/
+	width: 35px;
+	height: 25px;
+	top: 16px;
+	left: 86px;
+	animation: 3s infinite blink;
+	opacity: 0;
+}
+
+@keyframes blink{
+	0%{opacity: 0;}
+	50%{opacity: 0;}
+	51%{opacity: 1;}
+	55%{opacity: 1;}
+	56%{opacity: 0;}
+}
+
+@keyframes left-arm{
+	10%{
+		transform: rotate(-20deg);
+	}
+	
+	30%{
+		transform: rotate(-20deg);
+	}
+	
+	50%{
+		transform: rotate(0deg);
+	}
+}
+
+@keyframes right-arm{	
+	10%{
+		transform: rotate(20deg);
+	}
+	
+	30%{
+		transform: rotate(20deg);
+	}
+	
+	50%{
+		transform: rotate(0deg);
+	}
+}
