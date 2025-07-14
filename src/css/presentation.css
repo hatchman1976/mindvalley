@@ -58,85 +58,12 @@ body {
     Now let's style the presentation steps.
 */
 
-.red-bg {
-  background-color: rgb(255, 68, 68);
-}
-
-.impress-on-performance-boundary,
-.impress-on-performance-boundary-forces,
-.impress-on-boundary-effects,
-.impress-on-economic-boundary,
-.impress-on-economic-boundary-external,
-.impress-on-economic-boundary-actions-and-results,
-.impress-on-recap-and-reflect,
-.impress-on-workload-boundary-push-2,
-.impress-on-workload-boundary-push,
-.impress-on-workload-boundary-forces,
-.impress-on-workload-boundary,
-.impress-on-the-error-margin,
-.impress-on-the-virtual-boundary,
-.impress-on-the-dead-zone,
-.impress-on-the-push,
-.impress-on-normalizing-deviance,
-.impress-on-normalizing-deviance-2,
-.impress-on-recap-and-reflect-again,
-.impress-on-barrier-defences,
-.impress-on-proactive-barrier-defences,
-.impress-on-outer-boundary {
-  background-color: rgb(255, 243, 224);
-}
-
-.impress-on-welcome,
-.impress-on-takeaways,
-.impress-on-the-model,
-.impress-on-systems-thinking,
-.impress-on-social-and-systems,
-.impress-on-social-and-systems-wiki,
-.impress-on-unplanned-work,
-.impress-on-work-takeaways {
-  background-color: rgb(207, 216, 220);
-}
-
-.impress-on-building-teams,
-.impress-on-final-thoughts,
-.impress-on-references,
-.impress-on-thank-you,
-.impress-on-building-diverse-teams,
-.impress-on-diversity-of-thought {
-  background-color: rgb(220, 237, 200);
-}
-
-.impress-on-mid-fiscal-end-fiscal,
-.impress-on-performance-reviews,
-.impress-on-advice-for-ic,
-.impress-on-relationships-are-core,
-.impress-on-people-takeaways {
-  background-color: rgb(250, 250, 250);
-}
-
-.impress-on-management-anti-patterns,
-.impress-on-kotter-management {
-  background-color: rgb(237, 231, 246);
-}
-
-.blue-bg {
-  background-color: rgb(51, 181, 229);
-}
 
 .step {
-  position: relative;
-  display: block;
-
-  width: 900px;
-  height: 700px;
-  margin: 20px auto;
-  padding: 40px 60px;
-
-  /* text-shadow: 0 2px 2px rgba(0, 10, 0, .5); */
-
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 30px;
-  letter-spacing: -1px;
+  width: 1600px !important;
+  height: 1000px !important;
+  box-sizing: border-box;
+  border: 3px dashed black;
 }
 
 /*
@@ -160,14 +87,6 @@ body {
 
 .notes {
   display: none;
-}
-
-h1,
-h2,
-h3 {
-  margin-bottom: 0.5em;
-  margin-top: 0.5em;
-  text-align: center;
 }
 
 p {
@@ -410,194 +329,42 @@ body.impress-mouse-timeout {
 
 /****************** Customisations added in ****************************************/
 h1 {
-  font-family: "Maven Pro";
-  font-size: 70px;
+  font-family: "Courier New", "Comic Neue", sans-serif;
+  font-weight: 600;
+  font-size: 100px;
   font-weight: 300px;
+  text-align: center;
 }
 
-.header-one {
-  position: absolute;
-  text-align: left;
-  font-family: "Maven Pro";
-  font-size: 70px;
-  font-weight: 300px;
-}
-
-.important-message,
-.important-message-80,
-.important-message-55,
-.important-message-30 {
-  position: absolute;
-  text-align: left;
-  font-family: "Comic Neue";
-  font-weight: bold;
-  color: red;
-}
-
-.important-message-80 {
-  font-size: 80px;
-}
-
-.important-message-55 {
-  font-size: 55px;
-}
-
-.important-message-30 {
-  font-size: 30px;
-}
-
-.regular-text,
-.regular-text-40,
-.regular-text-50,
-.regular-text-70,
-.regular-text-40-red,
-.regular-text-35,
-.regular-text-30,
-.regular-text-20,
-.regular-text-25 {
-  position: absolute;
-  font-family: "Comic Neue";
-}
-
-.regular-text-40 {
-  font-size: 40px;
-}
-
-.regular-text-50 {
-  font-size: 50px;
-}
-
-.regular-text-70 {
-  font-size: 70px;
-}
-
-.regular-text-40-red {
-  font-size: 40px;
-  color: red;
-}
-
-.regular-text-35 {
-  font-size: 35px;
-}
-
-.regular-text-30 {
-  font-size: 30px;
-}
-.regular-text-20 {
-  font-size: 20px;
-}
-
-.regular-text-25 {
-  font-size: 25px;
-}
-.rotateimg5 {
-  -webkit-transform: rotate(5deg);
-  -moz-transform: rotate(5deg);
-  -ms-transform: rotate(5deg);
-  -o-transform: rotate(5deg);
-  transform: rotate(5deg);
-}
-.rotateimg10 {
-  -webkit-transform: rotate(10deg);
-  -moz-transform: rotate(10deg);
-  -ms-transform: rotate(10deg);
-  -o-transform: rotate(10deg);
-  transform: rotate(10deg);
-}
-.rotateimgneg5 {
-  -webkit-transform: rotate(-5deg);
-  -moz-transform: rotate(-5deg);
-  -ms-transform: rotate(-5deg);
-  -o-transform: rotate(-5deg);
-  transform: rotate(-5deg);
-}
-.rotateimgneg10 {
-  -webkit-transform: rotate(-10deg);
-  -moz-transform: rotate(-10deg);
-  -ms-transform: rotate(-10deg);
-  -o-transform: rotate(-10deg);
-  transform: rotate(-10deg);
-}
-.rotateimgneg30 {
-  -webkit-transform: rotate(-30deg);
-  -moz-transform: rotate(-30deg);
-  -ms-transform: rotate(-30deg);
-  -o-transform: rotate(-30deg);
-  transform: rotate(-30deg);
-}
-.rotateimgneg45 {
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-
-.rotateimg45 {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-.rotateimg120 {
-  -webkit-transform: rotate(120deg);
-  -moz-transform: rotate(120deg);
-  -ms-transform: rotate(120deg);
-  -o-transform: rotate(120deg);
-  transform: rotate(120deg);
-}
-.rotateimg160 {
-  -webkit-transform: rotate(160deg);
-  -moz-transform: rotate(160deg);
-  -ms-transform: rotate(160deg);
-  -o-transform: rotate(160deg);
-  transform: rotate(160deg);
-}
-.rotateimg180 {
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-.rotateimg200 {
-  -webkit-transform: rotate(200deg);
-  -moz-transform: rotate(200deg);
-  -ms-transform: rotate(200deg);
-  -o-transform: rotate(200deg);
-  transform: rotate(200deg);
-}
-.rotateimg210 {
-  -webkit-transform: rotate(210deg);
-  -moz-transform: rotate(210deg);
-  -ms-transform: rotate(210deg);
-  -o-transform: rotate(210deg);
-  transform: rotate(210deg);
-}
-.rotateimg220 {
-  -webkit-transform: rotate(220deg);
-  -moz-transform: rotate(220deg);
-  -ms-transform: rotate(220deg);
-  -o-transform: rotate(220deg);
-  transform: rotate(220deg);
-}
-.rotateimg315 {
-  -webkit-transform: rotate(315deg);
-  -moz-transform: rotate(315deg);
-  -ms-transform: rotate(315deg);
-  -o-transform: rotate(315deg);
-  transform: rotate(315deg);
-}
 
 a {
   all: unset;
-  text-shadow: none; 
-  background-color: transparent; 
+  text-shadow: none;
+  background-color: transparent;
   text-align: center;
-  font-family:Comic Neue;
-  color: royalblue; 
+  font-family: Comic Neue;
+  color: royalblue;
   text-decoration: underline;
 }
 
+.red-bg {
+  background-color: rgb(255, 68, 68);
+}
 
+.impress-on-step0 {
+  background-color: rgb(255, 243, 224);
+}
+
+.impress-on-step1,
+.impress-on-step2 {
+  background-color: rgb(207, 216, 220);
+}
+
+.blue-bg {
+  background-color: rgb(51, 181, 229);
+}
+
+p {
+  position: absolute;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}

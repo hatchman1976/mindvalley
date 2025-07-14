@@ -9,63 +9,17 @@
     <!-- Load Courier Prime from Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="css/presentation.css">
+
     <style>
-        html,
-        body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            font-family: 'Courier Prime', monospace !important;
-            transition: background-color 0.6s ease-in-out;
-        }
-
-        h1, h2, p {
-            font-family: 'Courier Prime', monospace !important;
-        }
-
-        .step {
-            width: 100vw;
-            height: 100vh;
-            padding: 2em;
-            border-radius: 10px;
-            background: transparent;
-            position: relative;
-            box-sizing: border-box;
-        }
-
-        .fullscreen-title {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-        }
-
-        .fullscreen-title h1 {
-            font-size: 3.2em; /* reduced by 20% from 4em */
-        }
-
-        /* Center top-aligned heading on step1 */
-        #step1 p {
-            font-weight: bold;
-            text-align: center;
-            margin: 0;
+        p {
             position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
+            font-family: "Comic Sans MS", "Comic Sans", cursive;
         }
-
-        /* Slide-specific background colors with transition */
-        .impress-on-step0 { background-color: #e6f0ff; }
-        .impress-on-step1 { background-color: #fff3e0; }
-        .impress-on-step2 { background-color: #f0f9ff; }
-        .impress-on-step3 { background-color: #f3e8ff; }
-
     </style>
 </head>
 
-<body class="impress-enabled">
+<body>
 
     <div class="fallback-message">
         <p>Your browser <b>doesn't support the features required</b> by impress.js.</p>
@@ -74,29 +28,94 @@
     <div id="impress">
         <div id="step0" class="step fullscreen-title" data-x="-1000" data-y="0">
             <h1>Reliability, Resilience and Incident Management</h1>
+            <br><br>
+            <h1>Q&A session</h1>
+            <br><br>
+            <h1>Andrew Hatch</h1>
         </div>
 
         <!-- Apply zoom and upward offset to visually center heading at top of screen -->
-        <div id="step1" class="step" data-x="1000" data-y="-400" data-scale="2">
-            <p style="font-weight: bold; text-align: center; margin: 0; position: absolute; top: 0; left: 50%; transform: translateX(-50%);">Who am I?</p>
-            <br />
-            <div style="display: flex; align-items: flex-end; position: absolute; bottom: 0;">
-                <div>
-                    <img src="images/Linkedin-Logo.png" alt="LinkedIn" style="width: 80px; height: 80px;">
-                    <img src="images/medium-blog-icon.png" alt="Medium Blog" style="width: 80px; height: 80px; margin-left: 20px;">
-                    <br />
-                    <img src="images/bluesky_logo.png" alt="Bluesky Logo" style="width: 80px; height: 80px; margin-top: 20px;">
-                </div>
-                <p style="margin-left: 20px; font-weight: bold; font-size: 1.5em;">hatchman76</p>
+        <div id="step1" class="step" data-x="4000" data-y="-400" data-scale="2">
+            <h1>whoami</h1>
+            <div class="substep" data-substep-order="1">
+                <img src="images/Australia.png" style="width: 250px; position:absolute; top: 270px; left: 10px" />
+
+                <img src="images/map-pin-red-hi.png" style="width: 25px;position: absolute; top: 395px; left: 180px;" />
+
+                <p style="top: 380px; left: 270px;">22 years</p>
             </div>
+
+            <div class="substep" data-substep-order="2">
+                <img src="images/india-map.png" style="width: 160px;position: absolute; top: 110px; left: 180px" />
             </div>
+            <div class="substep" data-substep-order="3">
+                <img src="images/usa.png" style="width: 280px; position:absolute; top: 150px; right: 10px" />
+                <img src="images/map-pin-red-hi.png" style="width: 25px;position: absolute; top: 200px; right: 265px" />
+                <img src="images/Linkedin-Logo.png" style="width: 70px; position: absolute; top: 200px; right: 300px" />
+                <p class="regular-text-35" style="right: 230px; top:260px">
+                    4 years
+                </p>
+
+            </div>
+
+            <div class="substep" data-substep-order="4">
+                <img src="images/new-data-centre.png"
+                    style="width: 120px;position: absolute; top: 250px; right: 480px" />
+                <img src="images/aws.png" style="width: 160px; position:absolute; top: 350px; right: 380px" />
+            </div>
+
+
+            <div class="substep" data-substep-order="4">
+                <p class="regular-text-70" style="left: 350px; bottom:350px">
+                    15 years
+                </p>
+            </div>
+
+            <div class="substep" data-substep-order="5">
+                <p class="regular-text-30" style="left: 350px; bottom:50px; text-align: left;">
+                    DevOps Manager <br>
+                    Platform Engineering Manager <br>
+                    SRE Manager
+                </p>
+            </div>
+
+
+            <!-- <img src="images/servers-on-fire.png" style="width: 180px;position: absolute; top: 580px; right: 350px" />
+            <img src="images/explosion.png" style="width: 220px; position: absolute; top: 500px; right:90px" />
+
+            <img src="images/pager.PNG" style="width: 180px;position: absolute; bottom: 60px; right: 450px" /> -->
+            <div class="substep" data-substep-order="6">
+
+                <img src="images/man-woman.png" style="width: 90px; position:absolute; bottom: 50px; left: 10px" />
+                <img src="images/man-woman.png" style="width: 90px; position:absolute; bottom: 150px; left: 110px" />
+                <img src="images/man-woman.png" style="width: 90px; position:absolute; bottom: 150px; left: 210px" />
+                <img src="images/man-woman.png" style="width: 90px; position:absolute; bottom: 50px; left: 210px" />
+                <img src="images/man-woman.png" style="width: 90px; position:absolute; bottom: 150px; left: 10px" />
+                <img src="images/man-woman.png" style="width: 90px; position:absolute; bottom: 50px; left: 110px;" />
+
+            </div>
+
+            <div class="substep" data-substep-order="7">
+
+                <img src="images/me_1996.png" style="width: 120px; position:absolute; bottom: 90px; right: 50px" />
+                <img src="images/man-cook-emoji.png"
+                    style="width: 120px; position:absolute; bottom: 90px; right: 160px" />
+
+
+            </div>
+
+            <div class="substep" data-substep-order="8">
+                <img src="images/man-surfing.png" style="width: 120px; position:absolute; top: 370px; right: 200px" />
+                <img src="images/Datsun-logo.png" style="width: 150px; position:absolute; top: 390px; right: 10px" />
+            </div>
+
         </div>
 
-        <div id="step2" class="step" data-x="3000" data-y="0">
+        <div id="step2" class="step" data-x="8000" data-y="0">
             <h2>Second Slide</h2>
         </div>
 
-        <div id="step3" class="step" data-x="6000" data-y="0" >
+        <div id="step3" class="step" data-x="1200" data-y="0">
             <h2>Zoomed Slide</h2>
         </div>
     </div>
