@@ -10,11 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/presentation.css">
-
     <style>
-        p {
+        .book-cover {
             position: absolute;
-            font-family: "Comic Sans MS", "Comic Sans", cursive;
+            width: 240px;
+            opacity: 0;
+            transition: opacity 2.5s ease-in;
         }
     </style>
 </head>
@@ -29,90 +30,104 @@
         <div id="step0" class="step fullscreen-title" data-x="-1000" data-y="0">
             <h1>Reliability, Resilience and Incident Management</h1>
             <br><br>
-            <h1>Q&A session</h1>
-            <br><br>
             <h1>Andrew Hatch</h1>
+            <br>
+            <h1>@hatchman76</h1>
+
+            <div style="display: flex; justify-content: center; gap: 20px; margin-top: 30px;">
+                <img src="images/Linkedin-Logo.png" style="width: 92px; height: 92px;" />
+                <img src="images/bluesky_logo.png" style="width: 92px; height: 92px;" />
+                <img src="images/medium-blog-icon.png" style="width: 92px; height: 92px;" />
+            </div>
         </div>
 
         <!-- Apply zoom and upward offset to visually center heading at top of screen -->
         <div id="step1" class="step" data-x="4000" data-y="-400" data-scale="2">
             <h1>whoami</h1>
             <div class="substep" data-substep-order="1">
-                <img src="images/Australia.png" style="width: 250px; position:absolute; top: 270px; left: 10px" />
-
-                <img src="images/map-pin-red-hi.png" style="width: 25px;position: absolute; top: 395px; left: 180px;" />
-
+                <img src="images/Australia.png" style="width: 300px; position:absolute; top: 270px; left: 10px" />
+                <img src="images/map-pin-red-hi.png" style="width: 30px;position: absolute; top: 395px; left: 180px;" />
                 <p style="top: 380px; left: 270px;">22 years</p>
             </div>
 
             <div class="substep" data-substep-order="2">
-                <img src="images/india-map.png" style="width: 160px;position: absolute; top: 110px; left: 180px" />
+                <img src="images/india-map.png" style="width: 230px; position: absolute; top: 40px; left: 180px" />
             </div>
+
             <div class="substep" data-substep-order="3">
-                <img src="images/usa.png" style="width: 280px; position:absolute; top: 150px; right: 10px" />
-                <img src="images/map-pin-red-hi.png" style="width: 25px;position: absolute; top: 200px; right: 265px" />
-                <img src="images/Linkedin-Logo.png" style="width: 70px; position: absolute; top: 200px; right: 300px" />
-                <p class="regular-text-35" style="right: 230px; top:260px">
-                    4 years
+                <img src="images/usa.png" style="width: 403px; position:absolute; top: 150px; right: 10px" />
+                <img src="images/map-pin-red-hi.png" style="width: 36px;position: absolute; top: 200px; right: 390px" />
+                <img src="images/thousand-eyes.png" style="width: 200px; position: absolute; top: 180px; right: 550px" />
+                <img src="images/Linkedin-Logo.png" style="width: 101px; position: absolute; top: 200px; right: 460px" />
+                <p class="regular-text-35" style="top: 290px; right: 480px;">
+                    5 years
                 </p>
-
             </div>
 
             <div class="substep" data-substep-order="4">
-                <img src="images/new-data-centre.png"
-                    style="width: 120px;position: absolute; top: 250px; right: 480px" />
-                <img src="images/aws.png" style="width: 160px; position:absolute; top: 350px; right: 380px" />
+                <img src="images/new-data-centre.png" style="width: 172.8px; position: absolute; top: 450px; right: 480px" />
+                <img src="images/aws.png" style="width: 230.4px; position:absolute; top: 450px; right: 230px" />
             </div>
 
-
             <div class="substep" data-substep-order="4">
-                <p class="regular-text-70" style="left: 350px; bottom:350px">
+                <p style="font-weight: bold; left: 40px; bottom:300px; font-size: 1.2em;">
                     15 years
                 </p>
             </div>
 
             <div class="substep" data-substep-order="5">
-                <p class="regular-text-30" style="left: 350px; bottom:50px; text-align: left;">
+                <p  style="left: 350px; bottom:50px; text-align: left;">
                     DevOps Manager <br>
                     Platform Engineering Manager <br>
                     SRE Manager
                 </p>
-            </div>
-
-
-            <!-- <img src="images/servers-on-fire.png" style="width: 180px;position: absolute; top: 580px; right: 350px" />
-            <img src="images/explosion.png" style="width: 220px; position: absolute; top: 500px; right:90px" />
-
-            <img src="images/pager.PNG" style="width: 180px;position: absolute; bottom: 60px; right: 450px" /> -->
-            <div class="substep" data-substep-order="6">
-
-                <img src="images/man-woman.png" style="width: 90px; position:absolute; bottom: 50px; left: 10px" />
-                <img src="images/man-woman.png" style="width: 90px; position:absolute; bottom: 150px; left: 110px" />
-                <img src="images/man-woman.png" style="width: 90px; position:absolute; bottom: 150px; left: 210px" />
-                <img src="images/man-woman.png" style="width: 90px; position:absolute; bottom: 50px; left: 210px" />
-                <img src="images/man-woman.png" style="width: 90px; position:absolute; bottom: 150px; left: 10px" />
-                <img src="images/man-woman.png" style="width: 90px; position:absolute; bottom: 50px; left: 110px;" />
-
+                <img src="images/man-woman.png" style="width: 108px; position:absolute; bottom: 90px; left: 30px" />
+                <img src="images/man-woman.png" style="width: 108px; position:absolute; bottom: 190px; left: 130px" />
+                <img src="images/man-woman.png" style="width: 108px; position:absolute; bottom: 190px; left: 230px" />
+                <img src="images/man-woman.png" style="width: 108px; position:absolute; bottom: 90px; left: 230px" />
+                <img src="images/man-woman.png" style="width: 108px; position:absolute; bottom: 190px; left: 30px" />
+                <img src="images/man-woman.png" style="width: 108px; position:absolute; bottom: 90px; left: 130px;" />
             </div>
 
             <div class="substep" data-substep-order="7">
-
-                <img src="images/me_1996.png" style="width: 120px; position:absolute; bottom: 90px; right: 50px" />
-                <img src="images/man-cook-emoji.png"
-                    style="width: 120px; position:absolute; bottom: 90px; right: 160px" />
-
-
+                <img src="images/me_1996.png" style="width: 172.8px; position:absolute; bottom: 90px; right: 50px" />
+                <img src="images/man-cook-emoji.png" style="width: 172.8px; position:absolute; bottom: 90px; right: 250px" />
             </div>
-
-            <div class="substep" data-substep-order="8">
-                <img src="images/man-surfing.png" style="width: 120px; position:absolute; top: 370px; right: 200px" />
-                <img src="images/Datsun-logo.png" style="width: 150px; position:absolute; top: 390px; right: 10px" />
-            </div>
-
         </div>
 
         <div id="step2" class="step" data-x="8000" data-y="0">
-            <h2>Second Slide</h2>
+            <h1>recommended reading</h1>
+            <img src="images/book_thinking-in-systems-large.png" class="book-cover" style="left: 30px; top: 180px;" />
+            <img src="images/book-chaos-engineering.png" class="book-cover" style="left: 280px; top: 200px;" />
+            <img src="images/book-drift-into-failure.png" class="book-cover" style="left: 530px; top: 250px;" />
+            <img src="images/book-field-guide-to-human-error.png" class="book-cover" style="left: 780px; top: 180px;" />
+            <img src="images/book-leaders-eat-last.png" class="book-cover" style="left: 1030px; top: 210px;" />
+            <img src="images/book-measure-what-matters.png" class="book-cover" style="left: 50px; top: 550px;" />
+            <img src="images/book-normal-accidents.png" class="book-cover" style="left: 310px; top: 600px;" />
+            <img src="images/book-still-not-safe.png" class="book-cover" style="left: 600px; top: 580px;" />
+            <img src="images/book-the-challenger-launch-decision.png" class="book-cover" style="left: 850px; top: 560px;" />
+            <img src="images/book-the-devops-handbook.png" class="book-cover" style="left: 1100px; top: 590px;" />
+            <img src="images/book-the-goal.png" class="book-cover" style="left: 10px; top: 380px;" />
+            <img src="images/book-the-phoenix-project.png" class="book-cover" style="left: 430px; top: 370px;" />
+            <img src="images/book-the-safety-anarchist.png" class="book-cover" style="left: 680px; top: 390px;" />
+            <img src="images/book-the-site-reliability-workbook.png" class="book-cover" style="left: 1130px; top: 170px;" />
+            <img src="images/book-the-tyranny-of-metrics.png" class="book-cover" style="left: 1180px; top: 380px;" />
+            <img src="images/book-turn-the-ship-around.png" class="book-cover" style="left: 580px; top: 550px;" />
+
+            <script>
+                const covers = document.querySelectorAll('#step2 .book-cover');
+                const delays = covers.length;
+                const indices = Array.from(covers.keys());
+                for (let i = indices.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [indices[i], indices[j]] = [indices[j], indices[i]];
+                }
+                indices.forEach((i, order) => {
+                    setTimeout(() => {
+                        covers[i].style.opacity = 1;
+                    }, 300 + order * 300);
+                });
+            </script>
         </div>
 
         <div id="step3" class="step" data-x="1200" data-y="0">

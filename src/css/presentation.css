@@ -60,7 +60,7 @@ body {
 
 
 .step {
-  width: 1600px !important;
+  width: 1500px !important;
   height: 1000px !important;
   box-sizing: border-box;
   border: 3px dashed black;
@@ -367,4 +367,12 @@ a {
 p {
   position: absolute;
   font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.book-cover {
+  position: absolute;
+  width: 240px;
+  opacity: 0;
+  transition: opacity 3s ease-in;
+  z-index: 1;
 }
