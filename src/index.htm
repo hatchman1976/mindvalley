@@ -57,15 +57,18 @@
             <div class="substep" data-substep-order="3">
                 <img src="images/usa.png" style="width: 403px; position:absolute; top: 150px; right: 10px" />
                 <img src="images/map-pin-red-hi.png" style="width: 36px;position: absolute; top: 200px; right: 390px" />
-                <img src="images/thousand-eyes.png" style="width: 200px; position: absolute; top: 180px; right: 550px" />
-                <img src="images/Linkedin-Logo.png" style="width: 101px; position: absolute; top: 200px; right: 460px" />
+                <img src="images/thousand-eyes.png"
+                    style="width: 200px; position: absolute; top: 180px; right: 550px" />
+                <img src="images/Linkedin-Logo.png"
+                    style="width: 101px; position: absolute; top: 200px; right: 460px" />
                 <p class="regular-text-35" style="top: 290px; right: 480px;">
                     5 years
                 </p>
             </div>
 
             <div class="substep" data-substep-order="4">
-                <img src="images/new-data-centre.png" style="width: 172.8px; position: absolute; top: 450px; right: 480px" />
+                <img src="images/new-data-centre.png"
+                    style="width: 172.8px; position: absolute; top: 450px; right: 480px" />
                 <img src="images/aws.png" style="width: 230.4px; position:absolute; top: 450px; right: 230px" />
             </div>
 
@@ -76,7 +79,7 @@
             </div>
 
             <div class="substep" data-substep-order="5">
-                <p  style="left: 350px; bottom:50px; text-align: left;">
+                <p style="left: 350px; bottom:50px; text-align: left;">
                     DevOps Manager <br>
                     Platform Engineering Manager <br>
                     SRE Manager
@@ -91,54 +94,84 @@
 
             <div class="substep" data-substep-order="7">
                 <img src="images/me_1996.png" style="width: 172.8px; position:absolute; bottom: 90px; right: 50px" />
-                <img src="images/man-cook-emoji.png" style="width: 172.8px; position:absolute; bottom: 90px; right: 250px" />
+                <img src="images/man-cook-emoji.png"
+                    style="width: 172.8px; position:absolute; bottom: 90px; right: 250px" />
             </div>
         </div>
 
         <div id="step2" class="step" data-x="8000" data-y="0">
             <h1>recommended reading</h1>
             <img src="images/book_thinking-in-systems-large.png" class="book-cover" style="left: 30px; top: 180px;" />
+            <img src="images/book-the-tyranny-of-metrics.png" class="book-cover" style="left: 1180px; top: 380px;" />
             <img src="images/book-chaos-engineering.png" class="book-cover" style="left: 280px; top: 200px;" />
             <img src="images/book-drift-into-failure.png" class="book-cover" style="left: 530px; top: 250px;" />
             <img src="images/book-field-guide-to-human-error.png" class="book-cover" style="left: 780px; top: 180px;" />
             <img src="images/book-leaders-eat-last.png" class="book-cover" style="left: 1030px; top: 210px;" />
-            <img src="images/book-measure-what-matters.png" class="book-cover" style="left: 50px; top: 550px;" />
             <img src="images/book-normal-accidents.png" class="book-cover" style="left: 310px; top: 600px;" />
             <img src="images/book-still-not-safe.png" class="book-cover" style="left: 600px; top: 580px;" />
-            <img src="images/book-the-challenger-launch-decision.png" class="book-cover" style="left: 850px; top: 560px;" />
+            <img src="images/book-the-challenger-launch-decision.png" class="book-cover"
+                style="left: 850px; top: 560px;" />
             <img src="images/book-the-devops-handbook.png" class="book-cover" style="left: 1100px; top: 590px;" />
             <img src="images/book-the-goal.png" class="book-cover" style="left: 10px; top: 380px;" />
+            <img src="images/book-turn-the-ship-around.png" class="book-cover" style="left: 50px; top: 550px;" />
             <img src="images/book-the-phoenix-project.png" class="book-cover" style="left: 430px; top: 370px;" />
             <img src="images/book-the-safety-anarchist.png" class="book-cover" style="left: 680px; top: 390px;" />
-            <img src="images/book-the-site-reliability-workbook.png" class="book-cover" style="left: 1130px; top: 170px;" />
-            <img src="images/book-the-tyranny-of-metrics.png" class="book-cover" style="left: 1180px; top: 380px;" />
-            <img src="images/book-turn-the-ship-around.png" class="book-cover" style="left: 580px; top: 550px;" />
+            <img src="images/book-the-site-reliability-workbook.png" class="book-cover"
+                style="left: 1130px; top: 170px;" />
 
-            <script>
-                const covers = document.querySelectorAll('#step2 .book-cover');
-                const delays = covers.length;
-                const indices = Array.from(covers.keys());
-                for (let i = indices.length - 1; i > 0; i--) {
-                    const j = Math.floor(Math.random() * (i + 1));
-                    [indices[i], indices[j]] = [indices[j], indices[i]];
-                }
-                indices.forEach((i, order) => {
-                    setTimeout(() => {
-                        covers[i].style.opacity = 1;
-                    }, 300 + order * 300);
-                });
-            </script>
         </div>
 
-        <div id="step3" class="step" data-x="1200" data-y="0">
-            <h2>Zoomed Slide</h2>
+        <div id="step3" class="step" data-x="12000" data-y="0">
+            <h1>My focus</h1>
+
+            I want teams to become high-performance teams<br>
+            The Customer experience must always be protected, <br>
+            and so must the businesses ability to generate revenue and maximise profit
+            <br>
+            Operational discipline, across the board, makes that happen
+
+        </div>
+
+        <div id="step4" class="step" data-x="16000" data-y="0">
+            <h1>How we will break this down</h1>
+            Monitoring and Alerts <br>
+            Learning <br>
+            Metrics that really matter <br>
+            Logging
+
         </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/gh/impress/impress.js@2.0.0/js/impress.min.js"></script>
     <script>
         impress().init();
+
     </script>
+
+    <script>
+        document.addEventListener("impress:stepenter", function (event) {
+            if (event.target.id === "step2") {
+                const covers = document.querySelectorAll('#step2 .book-cover');
+                const indices = Array.from(covers.keys());
+
+                // Shuffle the order
+                for (let i = indices.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [indices[i], indices[j]] = [indices[j], indices[i]];
+                }
+
+                // Slowly fade in with staggered random delays
+                indices.forEach((i, order) => {
+                    setTimeout(() => {
+                        covers[i].style.opacity = 1;
+                    }, 1000 + order * 400);  // Start at 1s, slower fade-ins
+                });
+            }
+        });
+    </script>
+
+
+
 
 </body>
 
