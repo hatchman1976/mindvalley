@@ -5,16 +5,13 @@
     <meta charset="utf-8" />
     <title>Reliability, Resilience and Incident Management - Andrew Hatch</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- External CSS Dependencies -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/impress/impress.js@2.0.0/css/impress-demo.css">
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/presentation.css">
-    
-    <!-- Custom Styles -->
-    <style>
-     
-    </style>
+
+
 </head>
 
 <body>
@@ -25,16 +22,16 @@
 
     <!-- Main presentation container -->
     <div id="impress">
-        
+
         <!-- Title Slide -->
         <div id="step0" class="step fullscreen-title" data-x="-1000" data-y="0">
             <h1>Reliability, Resilience and Incident Management</h1>
             <br><br>
             <h1>Andrew Hatch</h1>
             <br>
-            <h1>@hatchman76</h1>
+            <h1 style="position: absolute; bottom: 220px; left: 50%; transform: translateX(-50%);">@hatchman76</h1>
 
-            <div class="social-icons">
+            <div class="social-icons" style="position: absolute; bottom: 100px; left: 50%; transform: translateX(-50%); margin-top: 0;">
                 <img src="images/Linkedin-Logo.png" alt="LinkedIn" class="social-icon" />
                 <img src="images/bluesky_logo.png" alt="BlueSky" class="social-icon" />
                 <img src="images/medium-blog-icon.png" alt="Medium Blog" class="social-icon" />
@@ -44,183 +41,236 @@
         <!-- About Me Slide -->
         <div id="step1" class="step" data-x="4000" data-y="-400" data-scale="2">
             <h1>whoami</h1>
-            
+
             <!-- Australia Experience -->
-            <div class="substep" data-substep-order="1">
-                <img src="images/Australia.png" alt="Australia" class="country-map" 
-                     style="width: 300px; top: 270px; left: 10px" />
-                <img src="images/map-pin-red-hi.png" alt="Location pin" class="map-pin" 
-                     style="top: 395px; left: 180px;" />
-                <p style="position: absolute; top: 380px; left: 270px;">22 years</p>
-            </div>
+            <img src="images/Australia.png" alt="Australia" class="country-map"
+                style="width: 300px; top: 270px; left: 10px" />
+            <img src="images/map-pin-red-hi.png" alt="Location pin" class="map-pin"
+                style="top: 395px; left: 180px;" />
+            <p style="position: absolute; top: 380px; left: 270px;">22 years</p>
 
             <!-- India Experience -->
-            <div class="substep" data-substep-order="2">
-                <img src="images/india-map.png" alt="India" class="country-map" 
-                     style="width: 230px; top: 40px; left: 180px" />
-            </div>
+            <img src="images/india-map.png" alt="India" class="country-map"
+                style="width: 230px; top: 40px; left: 180px" />
 
             <!-- USA Experience -->
-            <div class="substep" data-substep-order="3">
-                <img src="images/usa.png" alt="USA" class="country-map" 
-                     style="width: 403px; top: 150px; right: 10px" />
-                <img src="images/map-pin-red-hi.png" alt="Location pin" class="map-pin-large" 
-                     style="top: 200px; right: 390px" />
-                <img src="images/thousand-eyes.png" alt="ThousandEyes" class="company-logo"
-                     style="width: 200px; top: 180px; right: 550px" />
-                <img src="images/Linkedin-Logo.png" alt="LinkedIn" class="company-logo"
-                     style="width: 101px; top: 200px; right: 460px" />
-                <p class="regular-text-35" style="position: absolute; top: 290px; right: 480px;">
-                    5 years
-                </p>
-            </div>
+            <img src="images/usa.png" alt="USA" class="country-map" style="width: 403px; top: 150px; right: 10px" />
+            <img src="images/map-pin-red-hi.png" alt="Location pin" class="map-pin-large"
+                style="top: 200px; right: 390px" />
+            <img src="images/thousand-eyes.png" alt="ThousandEyes" class="company-logo"
+                style="width: 200px; top: 180px; right: 550px" />
+            <img src="images/Linkedin-Logo.png" alt="LinkedIn" class="company-logo"
+                style="width: 101px; top: 200px; right: 460px" />
+            <p class="regular-text-35" style="position: absolute; top: 290px; right: 480px;">
+                5 years
+            </p>
 
             <!-- Infrastructure Experience -->
-            <div class="substep" data-substep-order="4">
-                <img src="images/new-data-centre.png" alt="Data Center" class="company-logo"
-                     style="width: 172.8px; top: 450px; right: 480px" />
-                <img src="images/aws.png" alt="AWS" class="company-logo" 
-                     style="width: 230.4px; top: 450px; right: 230px" />
-                <p class="years-label" style="left: 40px; bottom: 300px;">
-                    15 years
-                </p>
-            </div>
+            <img src="images/new-data-centre.png" alt="Data Center" class="company-logo"
+                style="width: 172.8px; top: 450px; right: 480px" />
+            <img src="images/aws.png" alt="AWS" class="company-logo"
+                style="width: 230.4px; top: 450px; right: 230px" />
+            <p class="years-label" style="left: 40px; bottom: 300px;">
+                15 years
+            </p>
 
             <!-- Management Experience -->
-            <div class="substep" data-substep-order="5">
-                <p class="text-bottom-left">
-                    DevOps Manager <br>
-                    Platform Engineering Manager <br>
-                    SRE Manager
-                </p>
-                
-                <!-- Team members visualization -->
-                <img src="images/man-woman.png" alt="Team member" class="team-member" 
-                     style="bottom: 90px; left: 30px" />
-                <img src="images/man-woman.png" alt="Team member" class="team-member" 
-                     style="bottom: 190px; left: 130px" />
-                <img src="images/man-woman.png" alt="Team member" class="team-member" 
-                     style="bottom: 190px; left: 230px" />
-                <img src="images/man-woman.png" alt="Team member" class="team-member" 
-                     style="bottom: 90px; left: 230px" />
-                <img src="images/man-woman.png" alt="Team member" class="team-member" 
-                     style="bottom: 190px; left: 30px" />
-                <img src="images/man-woman.png" alt="Team member" class="team-member" 
-                     style="bottom: 90px; left: 130px;" />
-            </div>
+            <p class="text-bottom-left">
+                DevOps Manager <br>
+                Platform Engineering Manager <br>
+                SRE Manager
+            </p>
+
+            <!-- Team members visualization -->
+            <img src="images/man-woman.png" alt="Team member" class="team-member"
+                style="bottom: 90px; left: 30px" />
+            <img src="images/man-woman.png" alt="Team member" class="team-member"
+                style="bottom: 190px; left: 130px" />
+            <img src="images/man-woman.png" alt="Team member" class="team-member"
+                style="bottom: 190px; left: 230px" />
+            <img src="images/man-woman.png" alt="Team member" class="team-member"
+                style="bottom: 90px; left: 230px" />
+            <img src="images/man-woman.png" alt="Team member" class="team-member"
+                style="bottom: 190px; left: 30px" />
+            <img src="images/man-woman.png" alt="Team member" class="team-member"
+                style="bottom: 90px; left: 130px;" />
 
             <!-- Personal Touch -->
-            <div class="substep" data-substep-order="7">
-                <img src="images/me_1996.png" alt="Andrew in 1996" class="profile-image"
-                     style="bottom: 90px; right: 50px" />
-                <img src="images/man-cook-emoji.png" alt="Cooking hobby" class="profile-image"
-                     style="bottom: 90px; right: 250px" />
-            </div>
+            <img src="images/me_1996.png" alt="Andrew in 1996" class="profile-image"
+                style="bottom: 90px; right: 50px" />
+            <img src="images/man-cook-emoji.png" alt="Cooking hobby" class="profile-image"
+                style="bottom: 90px; right: 250px" />
         </div>
 
         <!-- Recommended Reading Slide -->
         <div id="step2" class="step" data-x="8000" data-y="0">
             <h1>some recommended reading</h1>
-            
+
             <!-- Book covers with positioned layout -->
-            <img src="images/book_thinking-in-systems-large.png" alt="Thinking in Systems" 
-                 class="book-cover" style="left: 30px; top: 180px;" />
-            <img src="images/book-the-tyranny-of-metrics.png" alt="The Tyranny of Metrics" 
-                 class="book-cover" style="left: 1180px; top: 380px;" />
-            <img src="images/book-chaos-engineering.png" alt="Chaos Engineering" 
-                 class="book-cover" style="left: 280px; top: 200px;" />
-            <img src="images/book-drift-into-failure.png" alt="Drift into Failure" 
-                 class="book-cover" style="left: 530px; top: 250px;" />
-            <img src="images/book-field-guide-to-human-error.png" alt="Field Guide to Human Error" 
-                 class="book-cover" style="left: 780px; top: 180px;" />
-            <img src="images/book-leaders-eat-last.png" alt="Leaders Eat Last" 
-                 class="book-cover" style="left: 1030px; top: 210px;" />
-            <img src="images/book-normal-accidents.png" alt="Normal Accidents" 
-                 class="book-cover" style="left: 310px; top: 600px;" />
-            <img src="images/book-still-not-safe.png" alt="Still Not Safe" 
-                 class="book-cover" style="left: 600px; top: 580px;" />
-            <img src="images/book-the-challenger-launch-decision.png" alt="The Challenger Launch Decision" 
-                 class="book-cover" style="left: 850px; top: 560px;" />
-            <img src="images/book-the-devops-handbook.png" alt="The DevOps Handbook" 
-                 class="book-cover" style="left: 1100px; top: 590px;" />
-            <img src="images/book-the-goal.png" alt="The Goal" 
-                 class="book-cover" style="left: 10px; top: 380px;" />
-            <img src="images/book-turn-the-ship-around.png" alt="Turn the Ship Around" 
-                 class="book-cover" style="left: 50px; top: 550px;" />
-            <img src="images/book-the-phoenix-project.png" alt="The Phoenix Project" 
-                 class="book-cover" style="left: 430px; top: 370px;" />
-            <img src="images/book-the-safety-anarchist.png" alt="The Safety Anarchist" 
-                 class="book-cover" style="left: 680px; top: 390px;" />
-            <img src="images/book-the-site-reliability-workbook.png" alt="Site Reliability Workbook" 
-                 class="book-cover" style="left: 1130px; top: 170px;" />
+            <img src="images/book_thinking-in-systems-large.png" alt="Thinking in Systems" class="book-cover"
+                style="left: 30px; top: 180px;" />
+            <img src="images/book-the-tyranny-of-metrics.png" alt="The Tyranny of Metrics" class="book-cover"
+                style="left: 1180px; top: 380px;" />
+            <img src="images/book-chaos-engineering.png" alt="Chaos Engineering" class="book-cover"
+                style="left: 280px; top: 200px;" />
+            <img src="images/book-drift-into-failure.png" alt="Drift into Failure" class="book-cover"
+                style="left: 530px; top: 250px;" />
+            <img src="images/book-field-guide-to-human-error.png" alt="Field Guide to Human Error" class="book-cover"
+                style="left: 780px; top: 180px;" />
+            <img src="images/book-leaders-eat-last.png" alt="Leaders Eat Last" class="book-cover"
+                style="left: 1030px; top: 210px;" />
+            <img src="images/book-normal-accidents.png" alt="Normal Accidents" class="book-cover"
+                style="left: 310px; top: 600px;" />
+            <img src="images/book-the-challenger-launch-decision.png" alt="The Challenger Launch Decision"
+                class="book-cover" style="left: 850px; top: 560px;" />
+            <img src="images/book-the-devops-handbook.png" alt="The DevOps Handbook" class="book-cover"
+                style="left: 1100px; top: 590px;" />
+            <img src="images/book-the-goal.png" alt="The Goal" class="book-cover" style="left: 10px; top: 380px;" />
+            <img src="images/book-turn-the-ship-around.png" alt="Turn the Ship Around" class="book-cover"
+                style="left: 50px; top: 550px;" />
+            <img src="images/book-the-phoenix-project.png" alt="The Phoenix Project" class="book-cover"
+                style="left: 430px; top: 370px;" />
+            <img src="images/book-the-safety-anarchist.png" alt="The Safety Anarchist" class="book-cover"
+                style="left: 680px; top: 390px;" />
+            <img src="images/book-the-site-reliability-workbook.png" alt="Site Reliability Workbook" class="book-cover"
+                style="left: 1130px; top: 170px;" />
+            <img src="images/book-still-not-safe.png" alt="Still Not Safe" class="book-cover"
+                style="left: 600px; top: 580px;" />
+
         </div>
 
         <!-- Focus Slide -->
         <div id="step3" class="step" data-x="12000" data-y="0">
-            <h1>My focus</h1>
-            <p>
-                I want teams to become high-performance teams<br>
-                The Customer experience must always be protected, <br>
-                and so must the businesses ability to generate revenue and maximise profit<br>
+            <h1>High Performance Operations</h1>
+            <p style="position: absolute; top: 250px; left: 50px; width: 1400px; text-align: left;">
+                The Customer experience must always be protected -- graceful degradation over outages
+            </p>
+            <p style="position: absolute; top: 450px; left: 50px; width: 1400px; text-align: left;">
+                The businesses ability to generate revenue and maximise profit is paramount
+            </p>
+
+            <p style="position: absolute; top: 700px; left: 50px; width: 1400px; text-align: center; font-weight: bold; font-size: 1.3em;">
                 Operational discipline, across the board, makes that happen
             </p>
         </div>
 
-        <!-- Agenda Slide -->
-        <div id="step4" class="step" data-x="16000" data-y="0">
-            <h1>How we will break this down</h1>
-            <ul>
-                <li>Monitoring and Alerts</li>
-                <li>Learning</li>
-                <li>Metrics that really matter</li>
-                <li>Logging</li>
-            </ul>
-        </div>
-
         <!-- Core Principles Slide -->
-        <div id="step5" class="step" data-x="20000" data-y="0">
+        <div id="step5" class="step" data-x="16000" data-y="0">
             <h1>Core Principles</h1>
-            
-            <table style="width: 95%; margin: 40px auto; border-collapse: separate; border-spacing: 0 15px; max-width: 1400px; font-family: 'Courier New', Courier, monospace;">
+
+            <table
+                style="width: 95%; margin: 40px auto; border-collapse: separate; border-spacing: 0 15px; max-width: 1400px; font-family: 'Courier New', Courier, monospace;">
                 <tr>
-                    <td style="padding: 15px 15px; font-weight: bold; font-size: 0.7em; vertical-align: top; width: 40%; line-height: 1.3;">
+                    <td
+                        style="padding: 15px 15px; font-weight: bold; font-size: 0.7em; vertical-align: top; width: 40%; line-height: 1.3;">
                         Customers Are Not Your Monitoring System
                     </td>
                     <td style="padding: 15px 15px; font-size: 0.6em; vertical-align: top; line-height: 1.4;">
-                        When users find the issue before you do, you've already failed. Systems should be detecting degradation before it becomes pain.
+                        When users find the issue before you do, you've already failed. Systems should be detecting
+                        degradation before it becomes pain.
                     </td>
                 </tr>
                 <tr>
-                    <td style="padding: 15px 15px; font-weight: bold; font-size: 0.7em; vertical-align: top; width: 40%; line-height: 1.3;">
+                    <td
+                        style="padding: 15px 15px; font-weight: bold; font-size: 0.7em; vertical-align: top; width: 40%; line-height: 1.3;">
                         Incidents Are Learning Opportunities, Not Just Interruptions
                     </td>
                     <td style="padding: 15px 15px; font-size: 0.6em; vertical-align: top; line-height: 1.4;">
-                        The postmortem isn't the end of an incident — it's the beginning of improvement. What matters is what you change next.
+                        The postmortem isn't the end of an incident — it's the beginning of improvement. What matters is
+                        what you change next.
                     </td>
                 </tr>
                 <tr>
-                    <td style="padding: 15px 15px; font-weight: bold; font-size: 0.7em; vertical-align: top; width: 40%; line-height: 1.3;">
+                    <td
+                        style="padding: 15px 15px; font-weight: bold; font-size: 0.7em; vertical-align: top; width: 40%; line-height: 1.3;">
                         New Features Should Never Compromise Core Experiences
                     </td>
                     <td style="padding: 15px 15px; font-size: 0.6em; vertical-align: top; line-height: 1.4;">
-                        No launch is worth breaking the flows that drive your revenue and trust. Integrity comes before novelty.
+                        No launch is worth breaking the flows that drive your revenue and trust. Integrity comes before
+                        novelty.
                     </td>
                 </tr>
                 <tr>
-                    <td style="padding: 15px 15px; font-weight: bold; font-size: 0.7em; vertical-align: top; width: 40%; line-height: 1.3;">
+                    <td
+                        style="padding: 15px 15px; font-weight: bold; font-size: 0.7em; vertical-align: top; width: 40%; line-height: 1.3;">
                         On-Call Is a Core Engineering Discipline
                     </td>
                     <td style="padding: 15px 15px; font-size: 0.6em; vertical-align: top; line-height: 1.4;">
-                        It's not a chore or punishment shift — it's a critical skillset. Every engineer needs to be trained, supported, and held accountable for it.
+                        It's not a chore or punishment shift — it's a critical skillset. Every engineer needs to be
+                        trained, supported, and held accountable for it.
                     </td>
                 </tr>
             </table>
         </div>
+
+        <!-- Transition Slide -->
+        <div id="step6" class="step" data-x="24000" data-y="0">
+            <p style="position: absolute; top: 400px; left: 50px; width: 1400px; text-align: center; font-size: 1.5em;">
+                So.... what can we do in practice?
+            </p>
+        </div>
+
+        <!-- Topics Slide -->
+        <div id="step7" class="step" data-x="28000" data-y="0">
+            <h1>Topics</h1>
+            
+            <table style="width: 95%; margin: 40px auto; border-collapse: separate; border-spacing: 0 15px; max-width: 1400px; font-family: 'Courier New', Courier, monospace;">
+                <tr>
+                    <td style="padding: 15px 15px; font-size: 0.7em; vertical-align: top; width: 50%; line-height: 1.3;">
+                        emo_alert
+                    </td>
+                    <td style="padding: 15px 15px; font-size: 0.7em; vertical-align: top; width: 50%; line-height: 1.3;">
+                        Alerting
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 15px 15px; font-size: 0.7em; vertical-align: top; width: 50%; line-height: 1.3;">
+                        emo_metrics
+                    </td>
+                    <td style="padding: 15px 15px; font-size: 0.7em; vertical-align: top; width: 50%; line-height: 1.3;">
+                        Metrics
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 15px 15px; font-size: 0.7em; vertical-align: top; width: 50%; line-height: 1.3;">
+                        emo_monitoring
+                    </td>
+                    <td style="padding: 15px 15px; font-size: 0.7em; vertical-align: top; width: 50%; line-height: 1.3;">
+                        Monitoring
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 15px 15px; font-size: 0.7em; vertical-align: top; width: 50%; line-height: 1.3;">
+                        emo_deploy
+                    </td>
+                    <td style="padding: 15px 15px; font-size: 0.7em; vertical-align: top; width: 50%; line-height: 1.3;">
+                        Deployment Safety
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 15px 15px; font-size: 0.7em; vertical-align: top; width: 50%; line-height: 1.3;">
+                        emo_tracking
+                    </td>
+                    <td style="padding: 15px 15px; font-size: 0.7em; vertical-align: top; width: 50%; line-height: 1.3;">
+                        Tracking
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 15px 15px; font-size: 0.7em; vertical-align: top; width: 50%; line-height: 1.3;">
+                        emo_incidents
+                    </td>
+                    <td style="padding: 15px 15px; font-size: 0.7em; vertical-align: top; width: 50%; line-height: 1.3;">
+                        Incidents
+                    </td>
+                </tr>
+            </table>
+        </div>
+
     </div>
 
     <!-- JavaScript Dependencies and Custom Scripts -->
     <script src="https://cdn.jsdelivr.net/gh/impress/impress.js@2.0.0/js/impress.min.js"></script>
-    
+
     <script>
         // Initialize impress.js presentation
         impress().init();
