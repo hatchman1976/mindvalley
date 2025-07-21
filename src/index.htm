@@ -366,7 +366,6 @@
             <table
                 style="width: 98%; margin: 20px auto; border-collapse: separate; border-spacing: 0 8px; max-width: 1400px; font-family: 'Comic Sans MS', Comic, cursive;">
 
-
                 <tr>
                     <td
                         style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
@@ -377,24 +376,15 @@
                             noise. Every graph should answer: "What would I do if this moved?"
                     </td>
                 </tr>
-                <tr>
-                    <td
-                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
-                        SLOs > Raw Metrics
-                    </td>
-                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
-                        Raw metrics are ingredients — SLOs are meals. Until you tie metrics to user
-                        happiness or reliability goals, you're just watching CPU graphs.
-                    </td>
-                </tr>
+
                 <tr>
                     <td
                         style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
                         Clean Your Data
                     </td>
                     <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
-                        Dirty data ruins trust in metrics. If you can't separate synthetic traffic,
-                        failed test runs, or spam events, people will stop using your dashboards.
+                        Dirty data ruins trust in metrics. Separate synthetic traffic,
+                        failed test runs, or spam events
                     </td>
                 </tr>
                 <tr>
@@ -404,7 +394,7 @@
                     </td>
                     <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
                         Metrics should detect regression before customers do. If conversion drops
-                        20%, you shouldn't need a meeting to figure it out days later.
+                        20%, you should see be notified
                     </td>
                 </tr>
                 <tr>
@@ -414,7 +404,7 @@
                     </td>
                     <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
                         A flatline isn't good or bad — it depends on what it's measuring. Without
-                        historical context and goals, you're reading tea leaves.
+                        historical context and goals, you're guessing
                     </td>
                 </tr>
                 <tr>
@@ -424,36 +414,16 @@
                     </td>
                     <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
                         Measuring everything isn't a strategy — it's a mess. Choose a small set of
-                        high-signal metrics and invest in making them accurate, meaningful, and visible.
+                        high-signal metrics, invest in making them accurate, ensure they lead to behavioral impact
                     </td>
                 </tr>
                 <tr>
                     <td
                         style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
-                        Data ≠ Insight
+                        Traceability is hard, but...
                     </td>
                     <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
-                        You are not "data-driven" just because you collect numbers. You're only
-                        data-driven when your metrics change your behavior.
-                    </td>
-                </tr>
-                <tr>
-                    <td
-                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
-                        Shared Metrics Matter
-                    </td>
-                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
-                        If Marketing and Engineering use different dashboards to explain the same number, you
-                            don't have a metric — you have a dispute.
-                    </td>
-                </tr>
-                <tr>
-                    <td
-                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
-                        Instrument the Journey
-                    </td>
-                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
-                        Metrics should follow the user's full journey, not your microservice
+                        Metrics should instrument the user's full journey, not your microservice
                             boundaries. Otherwise, you'll miss what's actually breaking the experience.
                     </td>
                 </tr>
@@ -465,65 +435,111 @@
         <!-- Monitoring Slide -->
         <div id="step10" class="step" data-x="29000" data-y="-80" data-scale="0.2" data-rotate-y="20">
             <h1>Topic -> Monitoring</h1>
-            <table border="1" cellpadding="8" cellspacing="0">
-                <thead>
-                    <tr>
-                        <th>Summary</th>
-                        <th>Monitoring Hot Take</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Logs Aren’t Monitoring</td>
-                        <td>1. <strong>Storing logs is not monitoring.</strong> If no one’s reading them and they don’t
-                            drive alerts or insights, they’re just expensive exhaust.</td>
-                    </tr>
-                    <tr>
-                        <td>Too Much ≠ Useful</td>
-                        <td>2. <strong>Monitoring everything isn’t helpful — monitoring what matters is.</strong> If you
-                            can't name the top 5 things that break, you’re not monitoring effectively.</td>
-                    </tr>
-                    <tr>
-                        <td>User View First</td>
-                        <td>3. <strong>Monitoring should start from the user experience and work backwards.</strong> If
-                            you’re only monitoring CPU and 500s, you’re missing the real failures.</td>
-                    </tr>
-                    <tr>
-                        <td>Symptoms Over Causes</td>
-                        <td>4. <strong>Good monitoring catches symptoms, not just causes.</strong> Don't wait for a DB
-                            timeout — alert when the page slows down or checkout stalls.</td>
-                    </tr>
-                    <tr>
-                        <td>Visuals Are Critical</td>
-                        <td>5. <strong>If your dashboards confuse new engineers, they’re broken.</strong> Monitoring
-                            needs to be fast to read and obvious in failure.</td>
-                    </tr>
-                    <tr>
-                        <td>Validate Your Coverage</td>
-                        <td>6. <strong>If you’ve never tested your monitoring, you don’t know if it works.</strong>
-                            Break something in staging. Did you notice?</td>
-                    </tr>
-                    <tr>
-                        <td>External ≠ Observable</td>
-                        <td>7. <strong>Third-party dependencies must be monitored like first-class systems.</strong> If
-                            Stripe or Storyblok dies and you find out from Twitter, you're already behind.</td>
-                    </tr>
-                    <tr>
-                        <td>SLIs > Raw Data</td>
-                        <td>8. <strong>Good monitoring is built on SLIs, not just raw data points.</strong> Choose what
-                            you care about, then measure it well.</td>
-                    </tr>
-                    <tr>
-                        <td>Less is Clearer</td>
-                        <td>9. <strong>Over-instrumentation is real.</strong> Too many graphs, overlapping metrics, and
-                            unclear alerts turn dashboards into white noise.</td>
-                    </tr>
-                    <tr>
-                        <td>Monitoring ≠ Afterthought</td>
-                        <td>10. <strong>If monitoring is added after the feature ships, it’s already too late.</strong>
-                            Observability must be part of the design — not the cleanup.</td>
-                    </tr>
-                </tbody>
+
+            <table
+                style="width: 98%; margin: 20px auto; border-collapse: separate; border-spacing: 0 8px; max-width: 1400px; font-family: 'Comic Sans MS', Comic, cursive;">
+
+                <tr>
+                    <td
+                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                        Logs Aren't Monitoring
+                    </td>
+                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                        Storing logs is not monitoring. If no one's reading them and they don't
+                        drive alerts or insights, they're just expensive exhaust.
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                        Too Much ≠ Useful
+                    </td>
+                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                        Monitoring everything isn't helpful — monitoring what matters is. If you
+                        can't name the top 5 things that break, you're not monitoring effectively.
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                        User View First
+                    </td>
+                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                        Monitoring should start from the user experience and work backwards. If
+                        you're only monitoring CPU and 500s, you're missing the real failures.
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                        Symptoms Over Causes
+                    </td>
+                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                        Good monitoring catches symptoms, not just causes. Don't wait for a DB
+                        timeout — alert when the page slows down or checkout stalls.
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                        Visuals Are Critical
+                    </td>
+                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                        If your dashboards confuse new engineers, they're broken. Monitoring
+                        needs to be fast to read and obvious in failure.
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                        Validate Your Coverage
+                    </td>
+                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                        If you've never tested your monitoring, you don't know if it works.
+                        Break something in staging. Did you notice?
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                        External ≠ Observable
+                    </td>
+                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                        Third-party dependencies must be monitored like first-class systems. If
+                        Stripe or Storyblok dies and you find out from Twitter, you're already behind.
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                        SLIs > Raw Data
+                    </td>
+                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                        Good monitoring is built on SLIs, not just raw data points. Choose what
+                        you care about, then measure it well.
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                        Less is Clearer
+                    </td>
+                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                        Over-instrumentation is real. Too many graphs, overlapping metrics, and
+                        unclear alerts turn dashboards into white noise.
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                        Monitoring ≠ Afterthought
+                    </td>
+                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                        If monitoring is added after the feature ships, it's already too late.
+                        Observability must be part of the design — not the cleanup.
+                    </td>
+                </tr>
+
             </table>
 
         </div>
