@@ -300,10 +300,12 @@
                         style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
                         Alerts don't resolve themselves
                     </td>
-                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; position: relative;">
+                    <td
+                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; position: relative;">
                         If it fired, <em>something</em> changed. Dismissing it is betting against your customer
                         noticing first.
-                        <img src="images/jockers.png" alt="Jim Ockers" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); width: 120px; height: 120px; border-radius: 50%;" />
+                        <img src="images/jockers.png" alt="Jim Ockers"
+                            style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); width: 120px; height: 120px; border-radius: 50%;" />
                     </td>
                 </tr>
 
@@ -373,7 +375,7 @@
                     </td>
                     <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
                         If your metrics don't lead to decisions, they're not helping — they're
-                            noise. Every graph should answer: "What would I do if this moved?"
+                        noise. Every graph should answer: "What would I do if this moved?"
                     </td>
                 </tr>
 
@@ -424,7 +426,7 @@
                     </td>
                     <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
                         Metrics should instrument the user's full journey, not your microservice
-                            boundaries. Otherwise, you'll miss what's actually breaking the experience.
+                        boundaries. Otherwise, you'll miss what's actually breaking the experience.
                     </td>
                 </tr>
 
@@ -438,37 +440,21 @@
 
             <table
                 style="width: 98%; margin: 20px auto; border-collapse: separate; border-spacing: 0 8px; max-width: 1400px; font-family: 'Comic Sans MS', Comic, cursive;">
+                <tr>
+                    <td
+                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                        Customer Experience First
+                    </td>
+                    <td
+                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; position: relative;">
+                        Your critical customer and revenue flows are your front door. Monitor these above all else
+                        <img src="images/servers-on-fire.png" alt="Servers on Fire"
+                            style="position: absolute; right: -10px; top: 50%; transform: translateY(-50%); width: 120px; height: 120px;" />
+                        <img src="images/red-cross-x-wrong.png" alt="Wrong/Error"
+                            style="position: absolute; right: -10px; top: 50%; transform: translateY(-50%); width: 120px; height: 120px; z-index: 10;" />
+                    </td>
+                </tr>
 
-                <tr>
-                    <td
-                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
-                        Logs Aren't Monitoring
-                    </td>
-                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
-                        Storing logs is not monitoring. If no one's reading them and they don't
-                        drive alerts or insights, they're just expensive exhaust.
-                    </td>
-                </tr>
-                <tr>
-                    <td
-                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
-                        Too Much ≠ Useful
-                    </td>
-                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
-                        Monitoring everything isn't helpful — monitoring what matters is. If you
-                        can't name the top 5 things that break, you're not monitoring effectively.
-                    </td>
-                </tr>
-                <tr>
-                    <td
-                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
-                        User View First
-                    </td>
-                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
-                        Monitoring should start from the user experience and work backwards. If
-                        you're only monitoring CPU and 500s, you're missing the real failures.
-                    </td>
-                </tr>
                 <tr>
                     <td
                         style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
@@ -479,26 +465,7 @@
                         timeout — alert when the page slows down or checkout stalls.
                     </td>
                 </tr>
-                <tr>
-                    <td
-                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
-                        Visuals Are Critical
-                    </td>
-                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
-                        If your dashboards confuse new engineers, they're broken. Monitoring
-                        needs to be fast to read and obvious in failure.
-                    </td>
-                </tr>
-                <tr>
-                    <td
-                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
-                        Validate Your Coverage
-                    </td>
-                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
-                        If you've never tested your monitoring, you don't know if it works.
-                        Break something in staging. Did you notice?
-                    </td>
-                </tr>
+
                 <tr>
                     <td
                         style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
@@ -506,17 +473,7 @@
                     </td>
                     <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
                         Third-party dependencies must be monitored like first-class systems. If
-                        Stripe or Storyblok dies and you find out from Twitter, you're already behind.
-                    </td>
-                </tr>
-                <tr>
-                    <td
-                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
-                        SLIs > Raw Data
-                    </td>
-                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
-                        Good monitoring is built on SLIs, not just raw data points. Choose what
-                        you care about, then measure it well.
+                        Stripe dies and you find out from social media, you're already behind.
                     </td>
                 </tr>
                 <tr>
@@ -552,6 +509,17 @@
         <!-- Incidents Slide -->
         <div id="step12" class="step" data-x="29000" data-y="340" data-scale="0.2" data-rotate-y="20">
             <h1>Topic -> Incidents</h1>
+
+            MTTA and MTTD over MTTR
+            <br>
+            Learning is the critical part of incident response. If you learn nothing and don't drive poistive change,
+            you've wasted time and money
+            <br>
+            Incidents are unplanned investments in your system
+            <br>
+            Incidents should be reviewed weekly, by all managers, together. Notable incidents should be discussed first,
+            nominate managers
+
         </div>
 
         <!-- Discipline and Ritual Slide -->
