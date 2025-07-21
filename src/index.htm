@@ -300,9 +300,10 @@
                         style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
                         Alerts don't resolve themselves
                     </td>
-                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; position: relative;">
                         If it fired, <em>something</em> changed. Dismissing it is betting against your customer
                         noticing first.
+                        <img src="images/jockers.png" alt="Jim Ockers" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); width: 120px; height: 120px; border-radius: 50%;" />
                     </td>
                 </tr>
 
@@ -361,57 +362,100 @@
         <!-- Metrics Slide -->
         <div id="step9" class="step" data-x="29000" data-y="-290" data-scale="0.2" data-rotate-y="20">
             <h1>Topic -> Metrics</h1>
-            <table border="1" cellpadding="8" cellspacing="0">
+
+            <table
+                style="width: 98%; margin: 20px auto; border-collapse: separate; border-spacing: 0 8px; max-width: 1400px; font-family: 'Comic Sans MS', Comic, cursive;">
+
 
                 <tr>
-                    <td>Dashboards ≠ Insight</td>
-                    <td>1. <strong>Just having dashboards doesn’t mean you understand your system.</strong> Metrics
-                        without interpretation are just decoration.</td>
+                    <td
+                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                        Metrics Must Tell Stories
+                    </td>
+                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                        If your metrics don't lead to decisions, they're not helping — they're
+                            noise. Every graph should answer: "What would I do if this moved?"
+                    </td>
                 </tr>
                 <tr>
-                    <td>Metrics Must Tell Stories</td>
-                    <td>2. <strong>If your metrics don’t lead to decisions, they’re not helping — they’re
-                            noise.</strong> Every graph should answer: “What would I do if this moved?”</td>
+                    <td
+                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                        SLOs > Raw Metrics
+                    </td>
+                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                        Raw metrics are ingredients — SLOs are meals. Until you tie metrics to user
+                        happiness or reliability goals, you're just watching CPU graphs.
+                    </td>
                 </tr>
                 <tr>
-                    <td>SLOs > Raw Metrics</td>
-                    <td>3. <strong>Raw metrics are ingredients — SLOs are meals.</strong> Until you tie metrics to user
-                        happiness or reliability goals, you're just watching CPU graphs.</td>
+                    <td
+                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                        Clean Your Data
+                    </td>
+                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                        Dirty data ruins trust in metrics. If you can't separate synthetic traffic,
+                        failed test runs, or spam events, people will stop using your dashboards.
+                    </td>
                 </tr>
                 <tr>
-                    <td>Clean Your Data</td>
-                    <td>4. <strong>Dirty data ruins trust in metrics.</strong> If you can’t separate synthetic traffic,
-                        failed test runs, or spam events, people will stop using your dashboards.</td>
+                    <td
+                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                        Detect Regression Fast
+                    </td>
+                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                        Metrics should detect regression before customers do. If conversion drops
+                        20%, you shouldn't need a meeting to figure it out days later.
+                    </td>
                 </tr>
                 <tr>
-                    <td>Detect Regression Fast</td>
-                    <td>5. <strong>Metrics should detect regression before customers do.</strong> If conversion drops
-                        20%, you shouldn't need a meeting to figure it out days later.</td>
+                    <td
+                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                        Metrics Need Context
+                    </td>
+                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                        A flatline isn't good or bad — it depends on what it's measuring. Without
+                        historical context and goals, you're reading tea leaves.
+                    </td>
                 </tr>
                 <tr>
-                    <td>Metrics Need Context</td>
-                    <td>6. <strong>A flatline isn’t good or bad — it depends on what it’s measuring.</strong> Without
-                        historical context and goals, you're reading tea leaves.</td>
+                    <td
+                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                        Don't Metric Everything
+                    </td>
+                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                        Measuring everything isn't a strategy — it's a mess. Choose a small set of
+                        high-signal metrics and invest in making them accurate, meaningful, and visible.
+                    </td>
                 </tr>
                 <tr>
-                    <td>Don’t Metric Everything</td>
-                    <td>7. <strong>Measuring everything isn’t a strategy — it’s a mess.</strong> Choose a small set of
-                        high-signal metrics and invest in making them accurate, meaningful, and visible.</td>
+                    <td
+                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                        Data ≠ Insight
+                    </td>
+                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                        You are not "data-driven" just because you collect numbers. You're only
+                        data-driven when your metrics change your behavior.
+                    </td>
                 </tr>
                 <tr>
-                    <td>Data ≠ Insight</td>
-                    <td>8. <strong>You are not “data-driven” just because you collect numbers.</strong> You're only
-                        data-driven when your metrics change your behavior.</td>
+                    <td
+                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                        Shared Metrics Matter
+                    </td>
+                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                        If Marketing and Engineering use different dashboards to explain the same number, you
+                            don't have a metric — you have a dispute.
+                    </td>
                 </tr>
                 <tr>
-                    <td>Shared Metrics Matter</td>
-                    <td>9. <strong>If Marketing and Engineering use different dashboards to explain the same number, you
-                            don’t have a metric — you have a dispute.</strong></td>
-                </tr>
-                <tr>
-                    <td>Instrument the Journey</td>
-                    <td>10. <strong>Metrics should follow the user’s full journey, not your microservice
-                            boundaries.</strong> Otherwise, you’ll miss what’s actually breaking the experience.</td>
+                    <td
+                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                        Instrument the Journey
+                    </td>
+                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                        Metrics should follow the user's full journey, not your microservice
+                            boundaries. Otherwise, you'll miss what's actually breaking the experience.
+                    </td>
                 </tr>
 
             </table>
