@@ -284,93 +284,77 @@
             <h1>Topic -> Alerting</h1>
 
             <table
-                style="width: 95%; margin: 20px auto; border-collapse: separate; border-spacing: 0 8px; max-width: 1400px; font-family: 'Courier New', Courier, monospace;">
-                <thead>
-                    <tr>
-                        <th
-                            style="padding: 8px 10px; font-weight: bold; font-size: 0.5em; vertical-align: top; width: 25%; line-height: 1.2; text-align: left;">
-                            Summary
-                        </th>
-                        <th
-                            style="padding: 8px 10px; font-weight: bold; font-size: 0.5em; vertical-align: top; width: 75%; line-height: 1.2; text-align: left;">
-                            Alerting Hot Take
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td style="padding: 6px 10px; font-size: 0.35em; vertical-align: top; line-height: 1.3;">
-                            Noisy Alerts don't improve safety
-                        </td>
-                        <td style="padding: 6px 10px; font-size: 0.35em; vertical-align: top; line-height: 1.3;">
-                            They desensitize engineers to actual problems and increase overall ops toil. If an alert
-                            does lead to action then it is spam
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 6px 10px; font-size: 0.35em; vertical-align: top; line-height: 1.3;">
-                            Alerts don't resolve themselves
-                        </td>
-                        <td style="padding: 6px 10px; font-size: 0.35em; vertical-align: top; line-height: 1.3;">
-                            If it fired, <em>something</em> changed. Dismissing it is betting against your customer
-                            noticing first.
-                        </td>
-                    </tr>
+                style="width: 98%; margin: 20px auto; border-collapse: separate; border-spacing: 0 8px; max-width: 1400px; font-family: 'Comic Sans MS', Comic, cursive;">
 
-                    <tr>
-                        <td style="padding: 6px 10px; font-size: 0.35em; vertical-align: top; line-height: 1.3;">
-                            Don't Hoard Alerts
-                        </td>
-                        <td style="padding: 6px 10px; font-size: 0.35em; vertical-align: top; line-height: 1.3;">
-                            "We've always had that alert" is not a reason to keep it. That's not alert hygiene — that's
-                            organizational hoarding.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 6px 10px; font-size: 0.35em; vertical-align: top; line-height: 1.3;">
-                            Ownership
-                        </td>
-                        <td style="padding: 6px 10px; font-size: 0.35em; vertical-align: top; line-height: 1.3;">
-                            Every alert should have a clear owner, a documented playbook, and a known threshold. If you
-                            can't name all three, it's not production-grade.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 6px 10px; font-size: 0.35em; vertical-align: top; line-height: 1.3;">
-                            False Positives Aren't Free
-                        </td>
-                        <td style="padding: 6px 10px; font-size: 0.35em; vertical-align: top; line-height: 1.3;">
-                            They cost trust, time, and sleep — and eventually, they cost incidents.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 6px 10px; font-size: 0.35em; vertical-align: top; line-height: 1.3;">
-                            Fatigue = Leadership Miss
-                        </td>
-                        <td style="padding: 6px 10px; font-size: 0.35em; vertical-align: top; line-height: 1.3;">
-                            Alert fatigue is a management failure, not an individual one. If your team is burnt out on
-                            on-call, don't look at PagerDuty — look at your prioritization.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 6px 10px; font-size: 0.35em; vertical-align: top; line-height: 1.3;">
-                            Observability First
-                        </td>
-                        <td style="padding: 6px 10px; font-size: 0.35em; vertical-align: top; line-height: 1.3;">
-                            Good alerting is a product of good observability. If your alerts are noisy, the problem
-                            might not be the alert — it might be your system design.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 6px 10px; font-size: 0.35em; vertical-align: top; line-height: 1.3;">
-                            Tune and Verify
-                        </td>
-                        <td style="padding: 6px 10px; font-size: 0.35em; vertical-align: top; line-height: 1.3;">
-                            Every alert is an invitation to ask: "Should this even be possible?" Great teams don't just
-                            tune alerts — they eliminate the failure modes behind them.
-                        </td>
-                    </tr>
-                </tbody>
+                <tr>
+                    <td
+                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                        Noisy Alerts don't improve safety
+                    </td>
+                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                        They desensitize to actual problems and increase ops toil. Basically they are spam
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                        Alerts don't resolve themselves
+                    </td>
+                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                        If it fired, <em>something</em> changed. Dismissing it is betting against your customer
+                        noticing first.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td
+                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                        Ownership
+                    </td>
+                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                        Every alert should have an owner, playbook, and a threshold. If it doesn't, it's not
+                        production-grade.
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                        False Positives Aren't Free
+                    </td>
+                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                        They cost trust, time, and sleep — and eventually, they cost incidents.
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                        Fatigue = Leadership Miss
+                    </td>
+                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                        Alert fatigue is a management failure. If your team is burnt out on
+                        on-call — look at your prioritization.
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                        Observability First
+                    </td>
+                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                        Good observability is a product of good alerts and logging. If your alerts are noisy the problem
+                        may be your system design
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                        Tune and Verify
+                    </td>
+                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                        Every alert is an invitation to assess if it provides value and led to engineering action
+                    </td>
+                </tr>
+
             </table>
         </div>
 
@@ -513,6 +497,12 @@
         <!-- Discipline and Ritual Slide -->
         <div id="step13" class="step" data-x="29000" data-y="550" data-scale="0.2" data-rotate-y="20">
             <h1>Topic -> Discipline and Ritual</h1>
+            Every Sprint needs as a balance of planned and nuplanned work. If you have no maintenance work to do, but
+            you are not priotiziing
+            <br>
+            You should know your split, report on it, make it visible
+            <br>
+
         </div>
 
     </div>
