@@ -571,28 +571,121 @@
 
         <!-- Incidents Slide -->
         <div id="step12" class="step" data-x="29000" data-y="340" data-scale="0.2" data-rotate-y="-20">
-            <h1>Topic -> Incidents</h1>
+            <h1>Topic -> Incidents & On-Call</h1>
+            <table
+            style="width: 98%; margin: 20px auto; border-collapse: separate; border-spacing: 0 8px; max-width: 1400px; font-family: 'Comic Sans MS', Comic, cursive;">
 
-            MTTA and MTTD over MTTR
-            <br>
-            Learning is the critical part of incident response. If you learn nothing and don't drive poistive change,
-            you've wasted time and money
-            <br>
-            Incidents are unplanned investments in your system
-            <br>
-            Incidents should be reviewed weekly, by all managers, together. Notable incidents should be discussed first,
-            nominate managers
+            <tr>
+                <td
+                    style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                    Follow the right Metric Trends
+                </td>
+                <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                    MTTA and MTTD are useful. MTTR is almost useless
+                    
+                </td>
+            </tr>
+            <tr>
+                <td
+                    style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                    Reliability Investment
+                </td>
+                <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                    Learning from Incidents is critical, if you don't take action or improve anything from an incident you've wasted it
+                </td>
+            </tr>
+            <tr>
+                <td
+                    style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                    Weekly Reviews
+                </td>
+                <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                    Setup a weekly recurring incident review with Managers (Engineering AND Product) and Staff+. Choose the highest impact incidents to discuss first. 
+                </td>
+            </tr>
+            <tr>
+                <td
+                    style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                    You build it, you own it
+                </td>
+                <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                    Operations is an engineering responsibility. If you change production, you own it. If your team has an on-call roster, you should be on it.
+
+                </td>
+            </tr>
+            <tr>
+                <td
+                    style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                    On-call handover
+                </td>
+                <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                    Mandatory weekly meeting for everyone in the team. This is a learning opportunity for everyone. Take attendance if you have to
+                </td>
+            </tr>
+            <tr>
+                <td
+                    style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                    Roster resilience
+                </td>
+                <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                    Primary, Secondary and Overrides need to be catered for. Managers are always escalation points. Escalate up the chain to the top
+                </td>
+            </tr>
+          </table>
 
         </div>
 
         <!-- Discipline and Ritual Slide -->
         <div id="step13" class="step" data-x="29000" data-y="550" data-scale="0.2" data-rotate-y="-20">
             <h1>Topic -> Discipline and Ritual</h1>
-            Every Sprint needs as a balance of planned and nuplanned work. If you have no maintenance work to do, but
-            you are not priotiziing
-            <br>
-            You should know your split, report on it, make it visible
-            <br>
+                         <table
+                 style="width: 98%; margin: 20px auto; border-collapse: separate; border-spacing: 0 8px; max-width: 1400px; font-family: 'Comic Sans MS', Comic, cursive;">
+                  <tr>
+                    <td
+                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                        Planned vs Unplanned
+                    </td>
+                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                        If your sprint is 100% features, you're lying to yourself. Unplanned operational work is real and should feed the backlog.  very sprint should surface on-call-driven work
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                        Burndown by Default
+                    </td>
+                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                        If you don't have a burn-down chart of unresolved incident action items, you're not learning — you're stalling. Every item should have an owner, ETA, and escalation plan if overdue.
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                        Debt Tagging Matters
+                    </td>
+                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                        Every postmortem should tag unresolved debt: infra, process, test, tooling. 
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                        Test Gaps Are Real
+                    </td>
+                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                        If "add tests" is always your postmortem answer, you need to step back and fix your testing strategy — not just your test files.
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                        Escalate the Incomplete
+                    </td>
+                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                        Any incident follow-up not completed within SLA should escalate — not be silently deprioritized. Delay is risk. Track it like one.
+                    </td>
+                </tr>
+            </table>              
 
         </div>
 
