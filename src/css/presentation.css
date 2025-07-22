@@ -62,8 +62,6 @@ body {
 .step {
   width: 1500px !important;
   height: 1000px !important;
-  box-sizing: border-box;
-  border: 3px dashed black;
 }
 
 /*
