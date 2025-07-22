@@ -351,13 +351,23 @@ a {
   background-color: rgb(255, 68, 68);
 }
 
-.impress-on-step0 {
-  background-color: rgb(255, 243, 224);
-}
-
+.impress-on-step0,
 .impress-on-step1,
-.impress-on-step2 {
-  background-color: rgb(207, 216, 220);
+.impress-on-step2,
+.impress-on-step3,
+.impress-on-step5,
+.impress-on-step6,
+.impress-on-step7,
+.impress-on-step8,
+.impress-on-step9,
+.impress-on-step10,
+.impress-on-step11,
+.impress-on-step12,
+.impress-on-step13,
+.impress-on-step14,
+.impress-on-step15,
+.impress-on-step16 {
+  background-color: rgb(255, 243, 224);
 }
 
 .blue-bg {
