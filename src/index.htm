@@ -771,70 +771,82 @@
             <h1>Topic -> Discipline and Ritual</h1>
             <table
                 style="width: 98%; margin: 20px auto; border-collapse: separate; border-spacing: 0 8px; max-width: 1400px; font-family: 'Comic Sans MS', Comic, cursive;">
-                <tr>
-                    <td
-                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
-                        Planned vs Unplanned
-                    </td>
-                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
-                        If your sprint is 100% features, you're lying to yourself. Unplanned operational work is
-                        real
-                        and should feed the backlog.
-                    </td>
-                </tr>
-                <tr>
-                    <td
-                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
-                        Sprint Hygiene
-                    </td>
-                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
-                        Every sprint should surface on-call-driven work. If incident and alert follow-ups aren't
-                        showing
-                        up in Jira, you're hiding operational toil and waiting for them to happen again.
-                    </td>
-                </tr>
-                <tr>
-                    <td
-                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
-                        Burndown by Default
-                    </td>
-                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
-                        If you don't have a burn-down chart of unresolved incident action items, you're not learning
-                        —
-                        you're stalling. Every item should have an owner, ETA, and escalation plan if overdue.
-                    </td>
-                </tr>
-                <tr>
-                    <td
-                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
-                        Debt Tagging
-                    </td>
-                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
-                        Every postmortem should tag unresolved debt: infra, process, test, tooling. Action items
-                        should
-                        have deadlines
-                    </td>
-                </tr>
-                <tr>
-                    <td
-                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
-                        Close testing gaps
-                    </td>
-                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
-                        If "add tests" is always your postmortem answer, you need to step back and fix your testing
-                        strategy — not just your test files.
-                    </td>
-                </tr>
-                <tr>
-                    <td
-                        style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
-                        Escalate the Incomplete
-                    </td>
-                    <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
-                        Any incident follow-up not completed within SLA should escalate to the Weekly Incident
-                        Management Review — not get silently deprioritized. Delay is risk. Track it like one.
-                    </td>
-                </tr>
+                <tbody class="substep" data-substep-order="1">
+                    <tr>
+                        <td
+                            style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                            Planned vs Unplanned
+                        </td>
+                        <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                            If your sprint is 100% features, you're lying to yourself. Unplanned operational work is
+                            real
+                            and should feed the backlog.
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody class="substep" data-substep-order="2">
+                    <tr>
+                        <td
+                            style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                            Sprint Hygiene
+                        </td>
+                        <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                            Every sprint should surface on-call-driven work. If incident and alert follow-ups aren't
+                            showing
+                            up in Jira, you're hiding operational toil and waiting for them to happen again.
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody class="substep" data-substep-order="3">
+                    <tr>
+                        <td
+                            style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                            Burndown by Default
+                        </td>
+                        <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                            If you don't have a burn-down chart of unresolved incident action items, you're not learning
+                            —
+                            you're stalling. Every item should have an owner, ETA, and escalation plan if overdue.
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody class="substep" data-substep-order="4">
+                    <tr>
+                        <td
+                            style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                            Debt Tagging
+                        </td>
+                        <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                            Every postmortem should tag unresolved debt: infra, process, test, tooling. Action items
+                            should
+                            have deadlines
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody class="substep" data-substep-order="5">
+                    <tr>
+                        <td
+                            style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                            Close testing gaps
+                        </td>
+                        <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                            If "add tests" is always your postmortem answer, you need to step back and fix your testing
+                            strategy — not just your test files.
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody class="substep" data-substep-order="6">
+                    <tr>
+                        <td
+                            style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3; font-weight: bold;">
+                            Escalate the Incomplete
+                        </td>
+                        <td style="padding: 6px 10px; font-size: 0.7em; vertical-align: top; line-height: 1.3;">
+                            Any incident follow-up not completed within SLA should escalate to the Weekly Incident
+                            Management Review — not get silently deprioritized. Delay is risk. Track it like one.
+                        </td>
+                    </tr>
+                </tbody>
             </table>
 
         </div>
